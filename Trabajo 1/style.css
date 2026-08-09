@@ -1,0 +1,100 @@
+:root {
+    --color-fondo-pagina: #e5e5e5;
+    --color-barra-nav: #011f26;      /* Verde oscuro/azul marino de la foto */
+    --color-texto-nav: #ffffff;
+    --color-activo-fondo: #ffffff;
+    --color-activo-texto: #333333;
+    --color-hover-fondo: #023842;    /* Efecto hover al pasar el cursor */
+    --fuente-principal: Arial, sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo-pagina);
+    font-family: var(--fuente-principal);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* Contenedor principal centrado */
+.contenedor {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* 
+   MENÚ DE NAVEGACIÓN CON CLASES
+   */
+nav {
+    background-color: var(--color-barra-nav);
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: var(--color-texto-nav);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* para resaltar el botón "Inicio" activo */
+nav ul li:first-child a {
+    background-color: var(--color-activo-fondo);
+    color: var(--color-activo-texto);
+    font-weight: bold;
+}
+
+/*:hover para la interacción del cursor */
+nav ul li a:hover {
+    background-color: var(--color-hover-fondo);
+}
+
+/* Mantener el botón activo ("Inicio") intacto en hover */
+nav ul li:first-child a:hover {
+    background-color: var(--color-activo-fondo);
+    color: var(--color-activo-texto);
+}
+
+/* 
+   2. SECCIÓN CENTRAL E IMAGEN
+  */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.imagen-central {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+/*
+   FOOTER */
+   
+footer {
+    background-color: var(--color-barra-nav);
+    color: var(--color-texto-nav);
+    padding: 15px 25px;
+    width: 100%;
+    font-size: 14px;
+}
