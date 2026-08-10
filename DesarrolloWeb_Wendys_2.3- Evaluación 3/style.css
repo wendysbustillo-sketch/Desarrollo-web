@@ -1,0 +1,70 @@
+body p {
+    color: green;
+}
+/* !important en la línea de color base*/
+body {
+    background-color: #000000;
+    color: white !important; /* Paso 2: !important agregado */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+/* Estilos generales */
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    color: blue;
+}
+
+body {
+    color: red;
+}
+
+
+.encabezado-logo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el texto al centro */
+    gap: 15px;           /* Espacio de separación entre el logo y el texto */
+    margin-bottom: 10px;
+}
+
+/* Tamaño del logo */
+.logo {
+    height: 50px;        /* Ajusta la altura a tu gusto */
+    width: auto;
+}
+
+
+.encabezado-logo h1 {
+    margin: 0;
+}
+
+header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+}
+
+header h1 {
+    margin: 0 !important;
+}
